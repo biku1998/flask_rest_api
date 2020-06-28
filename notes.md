@@ -39,5 +39,14 @@
 * `400` - bad request. user fault
 
 
+## Flow of JWT [items_api]
+* JWT creates a new end-point i.e /auth
+* When we call /auth we send a username and password
+* JWT sends the username and password to authenticate
+* /auth returns a jwt token
+* next using that jwt token it will call identity and get the user
+* if all the steps are performed then we can say user is loged in
+
+
 
 
