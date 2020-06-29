@@ -47,6 +47,11 @@
 * next using that jwt token it will call identity and get the user
 * if all the steps are performed then we can say user is loged in
 
+## http rest status codes
+
+<img src = "http-status-codes.jpg" />
+
+
 
 
 
