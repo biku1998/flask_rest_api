@@ -52,6 +52,15 @@
 <img src = "http-status-codes.jpg" />
 
 
+## Resource and Models
+
+`Modal` is our internal representation of an entity, on the other hand `Resource` is an external representation of an entity.
+
+### A good api design is, don't polute the resource module with anything other than methods the end user will call.
+
+
+
+
 
 
 
