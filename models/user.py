@@ -16,6 +16,17 @@ class UserModel(db.Model):
     def save(self):
         db.session.add(self)
         db.session.commit()
+    
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+
+
+    def json(self):
+        return {
+            "id":self.id,
+            "username":self.username
+        }
 
     @classmethod
     def find_by_username(cls,username):
@@ -24,4 +35,7 @@ class UserModel(db.Model):
     @classmethod
     def find_by_id(cls,_id):
         return cls.query.filter_by(id = _id).first()
+
+
+
 
